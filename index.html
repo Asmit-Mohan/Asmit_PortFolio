@@ -454,9 +454,12 @@
 
 
   <script>
-      $('#year').text(new Date().getFullYear());
-      
-      $('body').scrollspy({ target: '#main-nav' });
+        $('#year').text(new Date().getFullYear());
+    
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#main-nav'
+        });
+    
         $('#main-nav a').on('click', function(e)
         {
             if(this.hash!=='')
