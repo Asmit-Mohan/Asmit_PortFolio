@@ -456,9 +456,7 @@
   <script>
         $('#year').text(new Date().getFullYear());
     
-        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#main-nav'
-        });
+        $('body').scrollspy({ target: '#main-nav' });
     
         $('#main-nav a').on('click', function(e)
         {
